@@ -8,7 +8,7 @@ const NavBar = () => {
     setNav(!nav);
   };
   return (
-    <div className="w-full h-[90px] bg-black">
+    <div className="w-full h-[90px] bg-black shadow-lg shadow-cyan-900/50">
       <div className="max-w-[1240px] mx-auto px-4 flex items-center justify-between h-full">
         <div>
           <h1 className="text-[#00d8ff]">DEFI</h1>
@@ -31,7 +31,13 @@ const NavBar = () => {
           )}
         </div>
         {/* Mobile Menu */}
-        <div className={nav? 'w-full bg-black text-white absolute top-[90px] left-0 flex justify-center text-center' : 'absolute left-[-100%]'}>
+        <div
+          className={
+            nav
+              ? "w-full bg-black text-white absolute top-[90px] left-0 flex justify-center text-center"
+              : "absolute left-[-100%]"
+          }
+        >
           <ul>
             <li className="text-2xl">Platform</li>
             <li className="text-2xl">Developers</li>
