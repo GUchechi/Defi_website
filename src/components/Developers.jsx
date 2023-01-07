@@ -5,15 +5,15 @@ const Developers = () => {
   return (
     <div className="w-full text-white bg-black">
       <div className="max-w-[1240px] mx-auto px-4 py-16 md:flex">
-        <devicePixelRatio>
-          <h1 className="my-10">Superpowers for DEFI Developers</h1>
+        <div>
+          <h1 className="my-10">Super powers for DEFI Developers</h1>
           <p>
             Checkout the <span className="blue">documentation </span>, the
             <span className="blue"> quick start</span> or a guide below to
             integrate your project with thousands of tokens and billions of
             liquidity.
           </p>
-        </devicePixelRatio>
+        </div>
         <div className="flex justify-center w-full py-10 ">
           <img
             className="max-w-[250px] shadow-lg shadow-cyan-500/50"

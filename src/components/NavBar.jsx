@@ -11,10 +11,10 @@ const NavBar = () => {
     <div className="w-full h-[90px] bg-black shadow-lg shadow-cyan-900/50">
       <div className="max-w-[1240px] mx-auto px-4 flex items-center justify-between h-full">
         <div>
-          <h1 className="text-[#00d8ff]">DEFI</h1>
+          <h1 className="text-[#00d8ff] cursor-pointer">DEFI</h1>
         </div>
         <div className="hidden md:flex">
-          <ul className="flex text-white items-center">
+          <ul className="flex text-white items-center cursor-pointer">
             <li>Platform</li>
             <li>Developers</li>
             <li>Community</li>
@@ -34,7 +34,7 @@ const NavBar = () => {
         <div
           className={
             nav
-              ? "w-full bg-black text-white absolute top-[90px] left-0 flex justify-center text-center"
+              ? "w-full bg-black text-white absolute top-[90px] left-0 flex justify-center text-center md:hidden"
               : "absolute left-[-100%]"
           }
         >

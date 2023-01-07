@@ -45,3 +45,22 @@ body {
     @apply bg-gradient-to-r from-[var(--primary-purple)] to-[var(--primary-blue)] py-3 px-7 rounded-3xl;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: -110%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+  .active {
+    background: #181818;
+    left: 0px;
+    opacity: 1;
+  }
+}
